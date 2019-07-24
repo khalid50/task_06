@@ -1,0 +1,102 @@
+/* Start Global Style*/
+
+body{
+    margin: 0;
+}
+
+
+.myContainer{
+    width:1170px;
+    margin:auto;
+    
+}
+
+.myClear{
+    
+    clear: both;
+}
+
+/* End Global Style*/
+
+
+.cool{
+    background-color: #CCC
+}
+
+
+/*start Header*/
+
+.myHeader{
+    width:100%;
+    height:80px;
+    background-color: #000;
+}
+
+.myHeader .myLogo h2{
+    
+    margin: 0;
+    color:#FCFCFC;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight:500;
+
+} 
+.myHeader .myLogo h2 span , .myCustom-fa{
+    
+    color:#33CAFF;
+}
+
+.myHeader .myLogo {
+    
+    float: left;
+}
+
+.myHeader .myNavbar ul {
+    
+    float : right;
+}
+
+.myHeader .myNavbar ul li {
+    
+    list-style: none;
+    float: left;
+    padding-left: 60px;
+}
+
+.myHeader .myNavbar ul li a{
+    
+    color: aliceblue;
+    text-decoration:none;
+    font-family: tahoma;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.myHeader .myNavbar ul li a:hover{
+    
+    color:#33CAFF;
+}
+/********End Header******/
+
+
+/****** Start My Footer *****/
+.myFooter{
+    width:100%;
+    height:110px;
+    padding-top: 25px;
+    background-color: #000; 
+    text-align: center;
+}
+.myFooter p{
+    margin: 0;
+    color:#fff;
+    font-size: 30px;
+    padding-top: 25px;
+    font-family: "Courier New";
+    text-transform: capitalize;
+}
+.myFooter span{
+    color: #33CAFF;
+}

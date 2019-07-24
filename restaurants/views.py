@@ -6,6 +6,7 @@ def restaurant_create(request):
     form = RestaurantForm()
     if request.method == "POST":
         form = RestaurantForm(request.POST)
+        
         if form.is_valid():
             form.save()
     context ={

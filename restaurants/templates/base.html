@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>
+            {% block title %} {%endblock%}
+        </title>
+        <link rel="stylesheet" href="{% static 'me.css' %}">
+    </head>
+    <body class="cool">
+        <!-------------------------------- Start Header ---------------------------------->
+
+        <div class="myHeader">
+                    
+                <div class="myContainer">
+
+                        <div class= "myLogo">
+                            <h2><i class="fas fa-laptop-code fa-fw fa-lg myCustom-fa"></i>rest<span>aurants</span></h2>
+                        </div>
+
+                            <div class="myNavbar">
+                                <ul>  <!--unOrder List -->
+                                    <li> <a href="{% url 'restaurant-list' %}">Rest List</a></li>
+                                    <li> <a href="#">Rest Detail</a></li>
+                                    <li> <a href="{% url 'restaurant-create'%}">Rest Create</a></li>
+                                    <li> <a href="#">ContactUS</a></li>
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+        <!-------------------------------- End Header ------------------------------------>
+        {%block content%}
+
+        {%endblock%}
+        <!-------------------------------- Start MyFooter  ------------------------------>
+        <div class="myFooter">
+                <p> <span>&copy;</span> <span>c</span>opyright <span>by</span> <span>k</span>halid <span>a</span>lshehri <span>2019</span></p>
+            </div>
+ <!-------------------------------- End MyFooter  ------------------------------>
+
+    </body>
+</html>

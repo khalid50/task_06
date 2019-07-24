@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Detail</title>
-    </head>
-    <body>
+{% extends "base.html"%}
+    {% block title %}   List {%endblock%}
+    
+{%block content%}
         <ul>
             <li>{{restaurant.name}}</li>
             <li>{{restaurant.description}}</li>
             <li>{{restaurant.opening_time}}</li>
             <li>{{restaurant.closing_time}}</li>
         </ul>
-    </body>
-</html>
+{%endblock%}
